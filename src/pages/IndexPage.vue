@@ -6,26 +6,23 @@
     </div>
     <q-card class="card rounded column items-center justify-center">
       <q-btn
-        rounded
         class="btn twitter-btn rounded"
-        v-on:click="login('Twitter')"
         text-color="white"
+        to="/registration"
       >
-        Twitter
+        X / Twitter
       </q-btn>
       <q-btn
-        rounded
         class="btn instagram-btn rounded"
-        v-on:click="login('Instagram')"
         text-color="white"
+        to="/registration"
       >
         Instagram
       </q-btn>
       <q-btn
-        rounded
         class="btn vk-btn rounded"
-        v-on:click="login('Vk')"
         text-color="white"
+        to="/registration"
       >
         Vk
       </q-btn>
@@ -34,9 +31,7 @@
 </template>
 
 <script setup>
-const login = (provider) => {
-  console.log(`Logging in with ${provider}`);
-};
+
 </script>
 
 <style scoped>
@@ -56,7 +51,8 @@ const login = (provider) => {
 }
 
 .twitter-btn {
-  background-color: #08A0E9;
+  /* background-color: #08A0E9; */
+  background-color: black;
 }
 
 .instagram-btn {
